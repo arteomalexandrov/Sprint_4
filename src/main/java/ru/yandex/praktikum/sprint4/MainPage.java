@@ -15,11 +15,6 @@ public class MainPage {
     WebDriver driver;
     public final String pageUrl = "https://qa-scooter.praktikum-services.ru/";
 
-//    // метод ожидания загрузки страницы
-//    public void waitForLoadMainPage() {
-//        new WebDriverWait(driver, 10)
-//                .until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".Home_FourPart__1uthg")));
-//    }
     // Кнопка "Заказать" вверху страницы
     private final By headerButtonOrder = By.xpath("//*[contains(@class,'Header_')]/button[text()='Заказать']");
     // Кнопка "Заказать" внизу страницы
@@ -44,7 +39,6 @@ public class MainPage {
     final By questionButton8 = By.id("accordion__heading-7");
 
     // ответы на вопросы
-    //.cssSelector("accordion__panel-0 > p");
     final By answerText1 = By.xpath("//*[@id='accordion__panel-0']//p");
     final By answerText2 = By.xpath("//*[@id='accordion__panel-1']//p");
     final By answerText3 = By.xpath("//*[@id='accordion__panel-2']//p");

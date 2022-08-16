@@ -16,9 +16,9 @@ public class BaseTest {
     @Before
     public void setup() {
         WebDriverManager.chromedriver().setup();
-        //WebDriverManager.firefoxdriver().setup();
+//        WebDriverManager.firefoxdriver().setup();
         driver = new ChromeDriver();
-        //driver = new FirefoxDriver();
+//        driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 

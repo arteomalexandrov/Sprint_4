@@ -57,9 +57,6 @@ public class OrderPage {
     // кнопка "Посмотреть статус"
     final By buttonOrderStatus = By.xpath("//*[contains(@class,'Button_Button__') and (text()='Посмотреть статус')]");//("//*[contains(@class,'Order_NextButton') and (text()='Посмотреть статус')]");
 
-
-//*[@class='select-search__select']//button[.//div[text()='Сокольники']]
-
     public void fillOrderFormPart1(String name, String surname, String address, String metroStation, String telephone) {
         driver.findElement(inputName).sendKeys(name);
         driver.findElement(inputSurname).sendKeys(surname);
@@ -87,10 +84,6 @@ public class OrderPage {
                 visibilityOfElementLocated(orderModal));
         driver.findElement(buttonYes).click();
     }
-
-//    public String getTextOrderHasBeenPlaced(By orderHasBeenPlaced) {
-//        return driver.findElement(this.orderHasBeenPlaced).getText();
-//    }
 
     public String getTextOrderHasBeenPlacedButton(By locatorButtonOrderStatus) {
         return driver.findElement(locatorButtonOrderStatus).getText();

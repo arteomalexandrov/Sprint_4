@@ -3,11 +3,11 @@ package ru.yandex.praktikum.sprint4;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class SeleniumTest extends BaseTest {
+public class TextAnswerAndOrderTests extends BaseTest {
 
     // тесты на проверку текстов на вопросы
     @Test
-    public void test1() {
+    public void textAnswerTest1() {
         // создай объект класса главной страницы приложения
         MainPage mainPage = new MainPage(driver);
         String actual;
@@ -19,7 +19,7 @@ public class SeleniumTest extends BaseTest {
     }
 
     @Test
-    public void test2() {
+    public void textAnswerTest2() {
         // создай объект класса главной страницы приложения
         MainPage mainPage = new MainPage(driver);
         String actual;
@@ -32,7 +32,7 @@ public class SeleniumTest extends BaseTest {
     }
 
    @Test
-    public void test3() {
+    public void textAnswerTest3() {
         // создай объект класса главной страницы приложения
         MainPage mainPage = new MainPage(driver);
         String actual;
@@ -46,7 +46,7 @@ public class SeleniumTest extends BaseTest {
     }
 
     @Test
-    public void test4() {
+    public void textAnswerTest4() {
         // создай объект класса главной страницы приложения
         MainPage mainPage = new MainPage(driver);
         String actual;
@@ -58,7 +58,7 @@ public class SeleniumTest extends BaseTest {
     }
 
     @Test
-    public void test5() {
+    public void textAnswerTest5() {
         // создай объект класса главной страницы приложения
         MainPage mainPage = new MainPage(driver);
         String actual;
@@ -71,7 +71,7 @@ public class SeleniumTest extends BaseTest {
     }
 
     @Test
-    public void test6() {
+    public void textAnswerTest6() {
         // создай объект класса главной страницы приложения
         MainPage mainPage = new MainPage(driver);
         String actual;
@@ -85,7 +85,7 @@ public class SeleniumTest extends BaseTest {
     }
 
     @Test
-    public void test7() {
+    public void textAnswerTest7() {
         // создай объект класса главной страницы приложения
         MainPage mainPage = new MainPage(driver);
         String actual;
@@ -99,7 +99,7 @@ public class SeleniumTest extends BaseTest {
     }
 
     @Test
-    public void test8() {
+    public void textAnswerTest8() {
         // создай объект класса главной страницы приложения
         MainPage mainPage = new MainPage(driver);
         String actual;
@@ -112,7 +112,7 @@ public class SeleniumTest extends BaseTest {
 
     // тесты на проверку заказа самоката вверху страницы
     @Test
-    public void test9() {
+    public void orderHeaderButtonTest1() {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickHeaderButtonOrder();
         OrderPage orderPage = new OrderPage(driver);
@@ -125,7 +125,7 @@ public class SeleniumTest extends BaseTest {
         }
 
     @Test
-    public void test10() {
+    public void orderHeaderButtonTest2() {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickHeaderButtonOrder();
         OrderPage orderPage = new OrderPage(driver);
@@ -139,7 +139,7 @@ public class SeleniumTest extends BaseTest {
 
     // тесты на проверку заказа самоката внизу страницы
     @Test
-    public void test11() {
+    public void orderHomeButtonTest1() {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickHomeButtonOrder();
         OrderPage orderPage = new OrderPage(driver);
@@ -152,7 +152,7 @@ public class SeleniumTest extends BaseTest {
     }
 
     @Test
-    public void test12() {
+    public void orderHomeButtonTest2() {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickHomeButtonOrder();
         OrderPage orderPage = new OrderPage(driver);
